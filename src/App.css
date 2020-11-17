@@ -1,0 +1,87 @@
+.App {
+  height: 100vh;
+  overflow: auto;
+}
+
+.repoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.repoContainer .repo{
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  width: min(40%, 400px);
+  cursor: pointer;
+}
+
+.repo-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.repo-name {
+  color: #0F66D6;
+  margin: 10px 0px
+}
+
+.repo-details {
+  padding: 15px
+}
+
+button {
+  color: white;
+  background-color: black;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+}
+
+input[type=text] {
+  padding: 10px;
+}
+
+.repo-details .repo {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: min(80%, 800px);
+  cursor: pointer;
+} 
+
+.repo-details .details {
+  width: 65%
+}
+
+
+.repo-details .logo {
+  width: 25%
+}
+
+@media (max-width: 720px) {
+
+  .repoContainer .repo{
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .repoContainer .repo{
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
